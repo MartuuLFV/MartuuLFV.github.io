@@ -288,10 +288,10 @@ home__social {
 }
 .home__blob {
   fill: var(--first-color);
-  width: 70%;
+  width: 100%
 }
 .home__blob-img {
-  width: 200px;
+  width: 20%;
 }
 
 /*BUTTONS*/
