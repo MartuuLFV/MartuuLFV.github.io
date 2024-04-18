@@ -288,7 +288,7 @@ home__social {
 }
 .home__blob {
   fill: var(--first-color);
-  width: 100%;
+  width: 70%;
 }
 .home__blob-img {
   width: 200px;
