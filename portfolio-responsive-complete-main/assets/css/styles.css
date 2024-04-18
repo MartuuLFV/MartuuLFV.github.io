@@ -294,6 +294,12 @@ home__social {
   width: 500px;
 }
 
+@media (max-width: 768px) {
+  .home__img {
+    display: none;
+  }
+}
+
 /*BUTTONS*/
 .button {
   display: inline-block;
