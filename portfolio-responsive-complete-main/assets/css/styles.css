@@ -239,34 +239,64 @@ img {
 }
 .home__title {
   font-size: var(--big-font-size);
+}
 
+@media screen and (max-width: 600px) {.home__title {
+  font-size: 25px;
+}
+  
 }
 .home__title-color {
   color: var(--first-color);
 }
-.home__social {
+home__social {
   display: flex;
   flex-direction: column;
 }
+
 .home__social-icon {
   width: max-content;
   font-size: 1.5rem;
   color: var(--second-color);
 }
+
 .home__social-icon:hover {
   color: var(--first-color);
+}
+
+/* Agregar regla para dispositivos con un ancho máximo de 600px */
+@media screen and (max-width: 600px) {
+  .home__social {
+    flex-direction: row; /* Cambiar la dirección a fila */
+    justify-content: center; /* Centrar los elementos horizontalmente */
+  }
+  
+  .home__social-icon {
+    margin: 0 15px; /* Agregar un margen entre los iconos */
+  }
+
+  @media screen {
+    
+  }
 }
 .home__img {
   position: absolute;
   right: 0px;
   bottom: 0px;
   width: 260px;
+  margin-top: 20px;
 }
 .home__blob {
   fill: var(--first-color);
+  width: 100%;
 }
 .home__blob-img {
-  width: 360px;
+  width: 500px;
+}
+@media (max-width: 768px) {
+  .home__img {
+    display: absolute;
+  }
 }
 
 /*BUTTONS*/
@@ -472,16 +502,30 @@ img {
   }
   .home__social {
     padding-top: 0;
-    padding-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
     flex-direction: row;
     align-self: flex-end;
   }
+
   .home__social-icon {
     margin-bottom: 0;
     margin-right: var(--mb-4);
   }
+
+  /* Media query para pantallas de celular */
+@media (max-width: 768px) {
+  .home__social {
+    padding-bottom: 1rem; /* Reducir aún más el espacio inferior */
+  }
+
+  .home__social-icon {
+    margin-right: 0.5rem; /* Reducir el margen derecho */
+    font-size: 1.2rem; /* Reducir el tamaño de los íconos */
+  }
+}
+  
   .home__img {
-    width: 300px;
+   
     bottom: 25%;
   }
   .about__container {
@@ -581,7 +625,7 @@ img {
 
 .material-symbols-outlined {
   width: max-content;
-  margin-bottom: var(--mb-2);
+  margin-bottom: var(--mb-5);
   font-size: 1.5rem;
   color: var(--second-color);
   margin-top: 5px;
