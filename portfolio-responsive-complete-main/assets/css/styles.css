@@ -293,11 +293,6 @@ home__social {
 .home__blob-img {
   width: 900px;
 }
-@media (max-width: 768px) {
-  .home__img {
-    display: absolute;
-  }
-}
 
 /*BUTTONS*/
 .button {
